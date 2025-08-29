@@ -1,10 +1,11 @@
 # Hi there 👋
-Im Jordan and I studied nc software development at [West College Scotland](https://www.westcollegescotland.ac.uk)
-### Im learning 
-- Java
+Im Jordan and I studied hnc software development at [West College Scotland](https://www.westcollegescotland.ac.uk)
+### Im intrested in the following languages
+- Java 8 (most proficient)
+- kotlin
 - Python 3
-- C++
-- Swift and Swift UI
+- C++ 
+- Swift and Swift UI 
 - HTML and CSS
 ### I Like
 - Technology
@@ -12,3 +13,5 @@ Im Jordan and I studied nc software development at [West College Scotland](https
 - Designing
 ### My favorite language is
 - Java 8
+### My least favorite langage is 
+- Python 3
