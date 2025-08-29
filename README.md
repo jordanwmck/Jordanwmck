@@ -1,5 +1,5 @@
 # Hi there 👋
-Im Jordan and I studied hnc software development at [West College Scotland](https://www.westcollegescotland.ac.uk)
+Im Jordan and I am studying HNC Computing (Software Development) at [West College Scotland](https://www.westcollegescotland.ac.uk)
 ### Im intrested in the following languages
 - Java 8 (most proficient)
 - kotlin
