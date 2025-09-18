@@ -2,7 +2,7 @@
 Im Jordan and I am studying HNC Computing (Software Development) at [West College Scotland](https://www.westcollegescotland.ac.uk)
 ### Im intrested in the following languages
 - Java 8 (most proficient)
-- kotlin
+- kotlin 
 - Python 3
 - C++ 
 - Swift and Swift UI 
@@ -12,6 +12,6 @@ Im Jordan and I am studying HNC Computing (Software Development) at [West Colleg
 - Programming
 - Designing
 ### My favorite language is
-- Java 8
+- Java 8 (I like how powerful Java is)
 ### My least favorite langage is 
-- Python 3
+- Python 3 (I find the syntax annoying)
