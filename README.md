@@ -1,12 +1,12 @@
 # Hi there 👋
-Im Jordan and I am studying HNC Computing (Software Development) at [West College Scotland](https://www.westcollegescotland.ac.uk)
+I'm Jordan and I am studying HNC Computing (Software Development) at [West College Scotland](https://www.westcollegescotland.ac.uk)
 ### Im intrested in the following languages
 - Java 8 (most proficient)
-- kotlin 
-- Python 3
-- C++ 
-- Swift and Swift UI 
-- HTML and CSS
+- kotlin (some knowlege)
+- Python 3 (somewhat understand)
+- C++ (not proficient)
+- Swift and Swift UI (not proficient)
+- HTML and CSS (somewhat understand)
 ### I Like
 - Technology
 - Programming
