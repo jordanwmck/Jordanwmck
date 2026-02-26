@@ -7,6 +7,7 @@ I am studying HNC Computing (Software Development) at West College Scotland, I l
 - **Java 8**: Continuing to enhance my skills and potentially learning modern Java as well.
 - **Kotlin**: I have learned the fundamentals in my college course and want to continue my studies.
 - **Web Dev**: I have learned the fundamentals of HTML and CSS in my course and [my site](https://jordanwmckenzie.com/) is an example of what I've learned during my course
+- **Figma**: I have learned how to make prototypes in Figma in my college course
 
 ## I want to learn
 - **C++**: This language is the backbone of modern computing and would vastly improve my ability to develop cross-platform applications.
