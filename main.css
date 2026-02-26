@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+/*
+ *  Global Stuff
+ */
+
+:root {
+    --background-color: #1E1E23;
+    --secondary-color: #46464B;
+    --secondary-color-transparency: rgba(37, 37, 38, 0.42);
+    --tertiary-color: #646469;
+    --text-primary-color: #E6E6E6;
+    --text-secondary-color: #C8C8CD;
+    --accent-color-primary: #00a0d3;
+    --accent-color-secondary: #00d2a4;
+    --link-colour: #33d0ff;
+}
+
+body {
+    margin: 0;
+    font-family: "Google Sans", "Roboto", "Helvetica Neue", "Helvetica", arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-primary-color);
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+a {
+    color: var(--link-colour);
+    user-select: text; /* links should always be highlightable via keyboard */
+    -webkit-user-select: text; 
+}
+
+.display-font{
+    font-family: "JetBrains Mono", serif;
+}
+
+/* Some browsers require that you specifically state an object is selectable */
+.selectable {
+    user-select: text;
+    -webkit-user-select: text; /* vscode doesnt like this because its non standard for W3C but apple requires it for safari */
+}
+
+/*
+ *  My protest against W3C
+ *  They wouldn't let me use h1-h3.
+ *  That's fine but they cannot expect me not to protest not being able to use the lazy
+ *  way of making text bigger.
+ */
+
+.defacto-h1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.defacto-h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.defacto-h3 {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+
+/*
+ *  Navigation menu section
+ */
+
+.nav {
+    left: 0;
+    right: 0;
+    top: 15px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary-color-transparency);
+    padding: 1rem;
+    border-radius: 50px;
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    max-width: 90%;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    flex-wrap: wrap;
+}
+
+.nav-logo {
+    margin-left: 25px;
+    margin-right: 50px;
+    height: auto;
+}
+
+.nav-links {
+    z-index: 1001;
+    display: inline-flex;
+    transition: 0.4s all ease-in-out;
+    margin: 0;
+    list-style: none;
+}
+
+.nav-link {
+    text-decoration: none !important;
+    transition: 0.4s all ease-in-out;
+    color: var(--text-primary-color);
+    font-weight: bold;
+    padding-right: 25px;
+    font-family: "JetBrains Mono", serif;
+}
+
+.hamburger-nav-menu {
+    display: none;
+    background: none;
+    border: none;
+}
+
+/*
+ *  The page header cards
+ */
+
+.headings {
+    height: 65vh;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.headings img {
+    width: 100%;
+    height: 100%;
+    opacity: 50%;
+    object-fit: cover;
+}
+
+.heading-texts {
+    bottom: 10%;
+    left: 5%;
+    position: absolute;
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.66);
+    font-size: 140%;
+}
+
+/*
+ *  Main body section of the page
+ *  Should be used where possible.
+ */
+
+.main-body-section {
+    box-sizing: border-box; /* as to why this fixes the left margin idk, something to do with how css calculates padding*/
+    margin-bottom: 60px;
+}
+
+.body-text {
+    text-align: center;
+    margin-left: 10%;
+    max-width: 80%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.left-override{
+    text-align: left;
+    margin-left: 0;
+    max-width: 100%;
+}
+
+/* Should be used on body sections to apply colour styles */
+.normal-colour-modifier {
+    background-color: var(--background-color);
+    color: var(--text-primary-color);
+}
+
+/* Should be used on body sections to apply colour styles */
+.on-background-colour-modifier {
+    background-color: var(--secondary-color);
+    color: var(--text-secondary-color);
+}
+
+/* Should be used on body sections to apply colour styles */
+.alternate-colour-modifier {
+    background-color: var(--tertiary-color);
+    color: var(--text-secondary-color);
+}
+
+/* can be used by body sections to make them act as a warning */
+.warning-colour-modifier {
+    background-color: rgb(150, 58, 0);
+    color: var(--text-primary-color);
+}
+
+
+/* This is to let you wrap multiple buttons and centre them in a body context */
+.body-cta-wrapper{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 30px auto;
+    gap: 20px;
+
+}
+
+/*
+ *  Generic menu list card
+ *  Should be used when an image needs to be left of text,
+ * to give the customer information
+ */
+
+.menu-card {
+    background-color: var(--secondary-color);
+    border-radius: 15px;
+    display: flex;
+    height: auto;
+    width: 90%;
+    margin-left: 5%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 60px;
+}
+
+.menu-card-texts h1 {
+    font-size: xx-large;
+}
+
+.menu-card-hero {
+    border-radius: 12px;
+    min-width: 120px;
+    width: 12%;
+    height: auto;
+    object-fit: cover;
+}
+
+.menu-card-texts {
+    display: block;
+    padding-left: 25px;
+}
+
+.price-promotion{
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--text-primary-color);
+    align-items: center;
+}
+
+.price-promotion-message {
+    margin-left: 10px;
+    padding: 7px;
+    background-color: darkgreen;
+    color: var(--text-primary-color);
+    border-radius: 5px;
+    width: fit-content;
+}
+
+.button {
+    background-color: var(--accent-color-primary);
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out; /* thank god for the mdn documentation */
+    border-radius: 15px;
+    padding: 10px 30px;
+    text-decoration: none;
+    display: inline-block;
+    color: var(--text-primary-color);
+}
+
+.button:hover {
+    transform: scale(1.2);
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 30%);
+}
+
+.button-secondary-colour {
+    background-color: var(--accent-color-secondary);
+}
+
+/*
+ *  Forms
+ *  Styling for form elements
+ */
+
+.form-container {
+    margin: 40px 0;
+}
+
+.form-element{
+    margin: 10px;
+    justify-items: center;
+    display: grid;
+}
+
+.form-element label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* this syntax was annoying to figure out */
+.form-element input,
+.form-element textarea {
+    transition: all 500ms ease-in-out;
+    border-radius: 5px;
+    padding: 10px;
+    color: var(--text-primary-color);
+    background: var(--background-color);
+    border: none;
+}
+
+.form-element textarea {
+    min-width: 90%;
+}
+
+.form-element input:focus,
+.form-element textarea:focus {
+    outline: 4px solid var(--accent-color-secondary);
+}
+
+.form-element input[type="submit"] {
+    background-color: var(--accent-color-primary);
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out; /* thank god for the mdn documentation */
+    border-radius: 10px;
+    padding: 10px 30px;
+    text-decoration: none;
+    display: inline-block;
+    color: var(--text-primary-color);
+    border: none;
+}
+
+.form-element input[type="submit"]:hover {
+    transform: scale(1.2);
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 30%);
+}
+
+/*
+ *  Footer
+ *  Styling for the footers
+ */
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.footer-element {
+    display: inline-flex;
+    flex-direction: column;
+    margin: 0 25px;
+    text-align: left;
+}
+
+.footer-element address p {
+    margin: 0;
+    font-style: normal;
+}
+
+/*
+ *  Videos
+ *  Styling for video files
+ */
+
+.video-container {
+    width: 80%;
+    border-radius: 10px;
+}
+
+/*
+ *  Responsive
+ *  Mobiles and smaller screened devices
+ */
+@media (max-width: 750px) {
+    .menu-card-texts h1 {
+        font-size: large;
+    }
+
+    .hamburger-nav-menu {
+        font-size: medium;
+        display: block;
+        color: var(--text-primary-color);
+        margin-right: 25px;
+    }
+    .nav-links {
+        width: 100%;
+        overflow: hidden;
+        max-height: 0;
+        flex-direction: column;
+        align-items: stretch;
+        margin: 0; /* Removed the 10px top margin from the closed state */
+        padding: 0;
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    .nav-link{
+        display: flex;
+        justify-content: center;
+        border-radius: 40px;
+        background: none;
+        border: none;
+        margin: 10px 0;
+        box-sizing: border-box;
+        padding: 20px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+        max-height: 500px;
+        margin-top: 10px; /* Added the margin only when the menu is active */
+    }
+
+    .nav-links.active .nav-link {
+        display: flex;
+        background: rgba(255, 255, 255, 10%);
+        border: 1px solid rgba(255, 255, 255, 0.30);
+    }
+}
