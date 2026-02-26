@@ -1,5 +1,4 @@
 # Hi, I'm Jordan Mckenzie
-Glasgow, Scotland
 
 ## Im a student.
 I am studying HNC Computing (Software Development) at West College Scotland, I love technology, designing things and writing code.

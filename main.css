@@ -19,7 +19,13 @@
 body {
     margin: 0;
     font-family: "Google Sans", "Roboto", "Helvetica Neue", "Helvetica", arial, sans-serif;
+    /* noinspection CssOverwrittenProperties */
+    background-color: #1E1E23; /* IE Fallback */
+    /* noinspection CssOverwrittenProperties */
     background-color: var(--background-color);
+    /* noinspection CssOverwrittenProperties */
+    color: #E6E6E6; /* IE Fallback */
+    /* noinspection CssOverwrittenProperties */
     color: var(--text-primary-color);
 }
 
@@ -78,6 +84,9 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* noinspection CssOverwrittenProperties */
+    background-color: rgba(37, 37, 38, 0.42); /* IE Fallback */
+    /* noinspection CssOverwrittenProperties */
     background-color: var(--secondary-color-transparency);
     padding: 1rem;
     border-radius: 50px;
